@@ -1,0 +1,39 @@
+.gallery img{
+    border-radius: 5px;
+}
+
+.onlyImage{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.twoImages{
+    width: 49%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.moreImagesFirst{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.threeImages{
+    width: 49%;
+    height: 94px;
+    object-fit: cover;
+}
+
+.fourImages{
+    width: 32%;
+    height: 94px;
+    object-fit: cover;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

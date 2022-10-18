@@ -1,0 +1,10 @@
+#Footer{
+    top: calc(100% - 00px);
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px 50px 50px;
+    background: black;
+    height: 400px;
+    justify-content: space-between;
+    width: 100%;
+}

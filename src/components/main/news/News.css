@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+#background-reverse{
+    position: absolute;
+
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    transform: rotate(180deg);
+    z-index: -2;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+    overflow: hidden;
+}
+
+.back-rev{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 1338px){
+    #background-reverse{
+        top: -600px;
+    }
+}
