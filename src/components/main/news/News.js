@@ -45,6 +45,11 @@ function News() {
 
     return (
         <>
+            <div className="back-rev">
+                <video autoPlay muted loop id="background-reverse">
+                    <source src="https://assets.uflaxderechte.org/uflaxderechte/background_gif.mp4" type="video/mp4" />
+                </video>
+            </div>
             <div className="header">
                 <h1>News</h1>
                 <h4>Hier gibts News über mich und meine SocialMedia Kanäle!</h4>
@@ -58,11 +63,7 @@ function News() {
                 }
 
             </div>
-            <div className="back-rev">
-                <video autoPlay muted loop id="background-reverse">
-                    <source src="https://assets.uflaxderechte.org/uflaxderechte/background_gif.mp4" type="video/mp4" />
-                </video>
-            </div>
+
 
         </>
     );
