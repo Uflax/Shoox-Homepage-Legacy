@@ -53,7 +53,6 @@ function News() {
             <div className="header">
                 <h1>News</h1>
                 <h4>Hier gibts News über mich und meine SocialMedia Kanäle!</h4>
-
             </div>
             <div className="news">
                 {
@@ -61,10 +60,7 @@ function News() {
                         return (<NewsWrapper title={x.title} desc={x.desc} imageList={x.imageList} id={generateUUID()} timestamp={x.timestamp} key={generateUUID()} />)
                     })
                 }
-
             </div>
-
-
         </>
     );
 }

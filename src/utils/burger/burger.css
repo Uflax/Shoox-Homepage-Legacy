@@ -42,7 +42,7 @@
 }
 
 .nav-menu{
-    position: fixed;
+    position: absolute;
     display: flex;
     right: -300px;
     top: 75px;
@@ -54,6 +54,7 @@
     transition: 0.3s;
     z-index: 10;
     list-style-type: none;
+    overflow: hidden;
 }
 
 .nav-item i{

@@ -1,6 +1,7 @@
 import './Main.css';
 import {useEffect, useState} from "react";
 
+
 function Main() {
 
     const [allLinks, setAllLinks] = useState([])
@@ -32,7 +33,6 @@ function Main() {
             <div className="mid">
                 <div className="logo-div">
                     <img src="https://assets.uflaxderechte.org/logos/ux-white.png" className="logo-mid logo-img"/>
-
                     <div className="logo-mid overlay"></div>
                 </div>
                 <div className="logoSubLinks">
@@ -45,6 +45,12 @@ function Main() {
                             </>;
                         })
                     }
+                </div>
+                <div className={"logoSubText"}>
+                    <h1>Wer bin ich?</h1>
+                    <h3>Ich bin Uflax, ich streame gerne auf Twitch und teile mein Leben mit meiner Community.</h3>
+                    <h3>Falls du mal vorbeischauen magst, mach dass gerne <a href={"https://twitch.tv/uflaxderechte/"} target={"_blank"}>hier</a>!</h3>
+                    <h2>LG Uflax</h2>
                 </div>
             </div>
         </>
