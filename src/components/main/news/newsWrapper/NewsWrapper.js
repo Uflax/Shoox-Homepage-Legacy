@@ -22,7 +22,6 @@ function NewsWrapper ({title, desc, imageList, id}) {
             desc.length > 65
         ) {
             document.getElementById(moreID).addEventListener("click", ()=>{
-                console.log(document.getElementById(descID).clientHeight)
                 if (document.getElementById(descID).clientHeight === 55) {
                     setTimeout(() => {
                         document.getElementById(descID).style.height = "100%";

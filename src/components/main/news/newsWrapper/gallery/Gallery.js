@@ -14,14 +14,14 @@ function Gallery({imageList}) {
                 {
                     imageList.length === 2 &&
                     imageList.map((x, index) => {
-                        return (<img src={x} className={"twoImages"}/>)
+                        return (<img src={x} className={"twoImages"} key={index}/>)
                     })
                 }
                 {
                     imageList.length === 3 &&
                     imageList.map((x, index) => {
                         if (index === 0) {
-                            return (<img src={x} className={"moreImagesFirst"}/>)
+                            return (<img src={x} className={"moreImagesFirst"} key={index}/>)
                         }
                     })
                 }
@@ -29,7 +29,7 @@ function Gallery({imageList}) {
                     imageList.length === 4 &&
                     imageList.map((x, index) => {
                         if (index === 0) {
-                            return (<img src={x} className={"moreImagesFirst"}/>)
+                            return (<img src={x} className={"moreImagesFirst"} key={index}/>)
                         }
                     })
                 }
@@ -39,7 +39,7 @@ function Gallery({imageList}) {
                     imageList.length === 3 &&
                     imageList.map((x, index) => {
                         if (index > 0) {
-                            return (<img src={x} className={"threeImages"}/>)
+                            return (<img src={x} className={"threeImages"} key={index}/>)
                         }
                     })
                 }
@@ -47,7 +47,7 @@ function Gallery({imageList}) {
                     imageList.length === 4 &&
                     imageList.map((x, index) => {
                         if (index > 0) {
-                            return (<img src={x} className={"fourImages"}/>)
+                            return (<img src={x} className={"fourImages"} key={index}/>)
                         }
                     })
                 }

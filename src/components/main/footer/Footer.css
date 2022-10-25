@@ -8,3 +8,18 @@
     justify-content: space-between;
     width: 100%;
 }
+
+#Footer div{
+    padding: 1%;
+    width: 48%;
+    white-space: initial;
+}
+
+#Footer div:last-child{
+    border-left: white 1px solid;
+}
+
+#Footer *{
+    white-space: initial;
+    word-wrap: break-word
+}

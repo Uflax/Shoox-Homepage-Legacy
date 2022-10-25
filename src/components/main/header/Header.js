@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import "./Header.css";
 
-import "../../../utils/burger/burger.css";
+import {Link} from "react-router-dom";
+
+import Logo from "./components/uflaxderechteSVG";
 
 function Header() {
 
-    const [allHeaderLinks, setAllHeaderLinks] = useState([]);
+    const [internHeaderLinks, setInternHeaderLinks] = useState([]);
+    const [externHeaderLinks, setExternHeaderLinks] = useState([]);
 
     const [isActive, setActive] = useState(false);
 
@@ -15,22 +18,29 @@ function Header() {
 
     useEffect(() => {
 
-        setAllHeaderLinks([
+        setInternHeaderLinks([
             {
                 title: "Home",
                 link: "/"
             },{
                 title: "News",
                 link: "/news"
-            },{
-                title: "SocialMedia",
-                link: "/social"
-            },{
-                title: "Merch",
-                link: "/merch"
+            }
+        ])
+
+        setExternHeaderLinks([
+            {
+                title: "UX-Media",
+                link: "https://uxmedia.uflaxderechte.org/"
             },{
                 title: "Netzwerk",
                 link: "https://network.uflaxderechte.org/"
+            },{
+                title: "UX-API",
+                link: "https://api.uflaxderechte.org/"
+            },{
+                title: "Cloud",
+                link: "https://cloud.uflaxderechte.org/"
             }
         ])
 
@@ -50,7 +60,7 @@ function Header() {
                 </a>
             </div>
             <div className="title">
-                <h1>UFLAXDERECHTE</h1>
+                <Logo />
             </div>
             <div className="HeaderLinks">
                 <div className={`hamburger ${isActive ? "active" : null}`} onClick={handleToggle}>
@@ -60,14 +70,21 @@ function Header() {
                 </div>
                 <ul className={`nav-menu ${isActive ? "active" : null}`}>
                     {
-                         allHeaderLinks.map((x) => {
-                            return <>
-                            <a href={x.link}>
+                         internHeaderLinks.map((x, index) => {
+                            return <Link to={x.link} key={index}>
+                                <li className="nav-item">
+                                    {x.title}
+                                </li>
+                            </Link>
+                        })
+                    }
+                    {
+                        externHeaderLinks.map((x, index) => {
+                            return <a href={x.link} key={index} target="_blank">
                                 <li className="nav-item">
                                     {x.title}
                                 </li>
                             </a>
-                            </>
                         })
                     }
                 </ul>
