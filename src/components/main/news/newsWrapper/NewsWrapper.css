@@ -31,3 +31,9 @@
 .more{
     height: 40px;
 }
+
+@media (max-width: 500px){
+    .newsWrapperItem .details h3{
+        height: 64px;
+    }
+}
