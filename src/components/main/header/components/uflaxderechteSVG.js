@@ -10,8 +10,7 @@ function SVG() {
                 <filter id="filter0_d_1_7" x="0.367981" y="0.984009" width="989.533" height="125.312"
                         filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                     <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                   result="hardAlpha"></feColorMatrix>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
                     <feOffset dy="4"></feOffset>
                     <feGaussianBlur stdDeviation="2"></feGaussianBlur>
                     <feComposite in2="hardAlpha" operator="out"></feComposite>
